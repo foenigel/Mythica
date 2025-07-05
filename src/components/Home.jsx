@@ -41,7 +41,7 @@ const Home = () => {
         <img src={homeBg} className="absolute right-0 top-0 h-full z-0" alt="" />
         <section ref={itemRef} className="w-full relative z-10 p-10 mt-10 md:p-20 md:mt-20">
             <h3 className="text-white font-montserrat text-xl font-medium uppercase">What’s Inside?</h3>
-            <div className="relative mt-8 flex flex-col justify-between md:flex-row md:mt-12">
+            <div className="relative mt-8 flex flex-col gap-4 w-full justify-center md:flex-row md:mt-12 md:justify-between md:gap-0">
                 {
                     CardInfo.map((card, index) => (
                         <Card key={index} {...card} />
