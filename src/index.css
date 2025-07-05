@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/made-dillan");
+@import "tailwindcss";
+
+@theme {
+  --color-customBurgundy: #ff61a3;
+  --color-customLightGrayBorder: #d9d9d9;
+  --color-customPink: #ff016b;
+  --color-customNeonGreen: #d6ff4e;
+  --color-customPurple: #7412fd;
+  --color-customLightPurple: #dac0ff;
+
+  --font-montserrat: Montserrat, "sans-serif";
+  --font-dillan: MADE Dillan, "sans-serif";
+}
+
+.waitlistTopBar {
+  background-image: linear-gradient(to right, var(--color-customPink), white);
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40%;
+  width: 100%;
+  filter: blur(20px);
+}
