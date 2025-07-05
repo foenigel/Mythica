@@ -11,7 +11,7 @@ const Card = ({info, image, color}) => {
 
     return ( 
     <div className="relative flex justify-center max-w-[420px] w-full h-[400px] p-6 md:h-[500px] md:border-[3px] md:border-customLightGrayBorder">
-        <div className={`absolute bg-customLightGrayBorder p-4 mx-6 cursor-crosshair ${hoverClass} md:p-8`}>
+        <div className={`absolute bg-customLightGrayBorder p-4 mx-6 cursor-crosshair transition-all duration-300 ease-in-out hover:scale-105 hover:rotate-12 ${hoverClass} md:p-8`}>
             <img src={image} className="" alt="cardImage" />
         </div>
         
