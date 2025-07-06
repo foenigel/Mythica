@@ -16,8 +16,8 @@ const Waitlist = () => {
                         <input type="email" className="bg-white px-2 py-1 focus:outline-none w-full" />
                     </div>
                     <div className="flex flex-col gap-8 w-full justify-end items-end md:px-4">
-                        <button className="col-span-4 bg-customPink rounded-full w-full max-w-[360px] text-white font-montserrat py-2">Notify me</button>
-                        <p className="text-customLightPurple italic font-montserrat text-sm capitalize md:pr-8">Note: We’ll let you know when we launch!</p>
+                        <button className="col-span-4 bg-customPink rounded-full w-full max-w-[360px] text-white font-montserrat py-2 sm:max-w-[520px] md:max-w-[310px]">Notify me</button>
+                        <p className="text-customLightPurple italic font-montserrat text-sm capitalize sm:pr-28 md:pr-8">Note: We’ll let you know when we launch!</p>
                     </div>
                 </div>
                 <div className="md:col-span-4 flex justify-end">
