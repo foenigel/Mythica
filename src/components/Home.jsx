@@ -66,22 +66,22 @@ const Home = () => {
                 }
             </div>
         </section>
-        <section className="w-full relative z-10 py-20 px-4 mt-0 sm:px-20 md:py-20 md:px-20 md:mt-0 max-w-[1400px]">
-            <div className="flex w-full justify-between">
-                <h3 className="text-white font-montserrat text-xl font-medium uppercase">From Our Community</h3>
-                <h3 className="text-white font-dillan text-lg">A Look Inside</h3>
+        <section className="w-full relative z-10 py-20 px-4 mt-10 sm:px-20 md:py-20 md:px-20 md:mt-0 max-w-[1400px]">
+            <div className="flex flex-col w-full justify-between md:flex-row">
+                <h3 className="text-white font-montserrat text-xl font-medium uppercase flex-1">From Our Community</h3>
+                <h3 className="text-white font-dillan text-lg w-fit">A Look Inside</h3>
             </div>
             
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6 mt-10">
                  {
                 Sample.map(({image}, index) => (
-                    <img src={image} className="transition-all duration-300 blur-lg hover:scale-105 ease-in-out rounded-xl hover:border-2 hover:border-white hover:blur-none" key={index} alt="" />
+                    <img src={image} className="transition-all duration-300 hover:scale-105 ease-in-out rounded-xl hover:border-2 hover:border-white hover:blur-none md:blur-lg" key={index} alt="" />
                 ))
                 }
             </div>
            <p className="text-white font-montserrat italic mt-6 text-center text-sm">Handpicked fantasy reads and magical items—here’s a glimpse of what subscribers have received.</p>
         </section>
-        <section ref={joinRef} className="w-full relative z-10 p-5 mt-20 md:px-40 max-w-[1400px] md:mt-0">
+        <section ref={joinRef} className="w-full relative z-10 p-5 mt-0 mb-20 md:px-40 max-w-[1400px] md:mt-0">
             <h3 className="uppercase text-white font-montserrat font-medium text-xl">Join the Waitlist</h3>
             <Waitlist/>
         </section>
