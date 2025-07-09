@@ -12,6 +12,15 @@
   --color-customDarkBlue: #1b1c31;
   --color-customLightDarkBlue: #7376aa;
   --color-customDarkPurple: #8833ff;
+  --color-buttonShadeOne: #030303;
+  --color-buttonShadeTwo: #276900;
+  --color-buttonShadeThree: #e0ff54;
+  --color-glowOne: #b4b80a;
+  --color-glowTwo: #e9ea73;
+  --color-borderOne: #95ff4e;
+  --color-borderTwo: #3ba200;
+  --color-customGray: #9b9a9e;
+  --color-navBarSelect: #353535;
 
   --font-montserrat: Montserrat, "sans-serif";
   --font-dillan: MADE Dillan, "sans-serif";

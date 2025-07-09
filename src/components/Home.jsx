@@ -5,7 +5,7 @@ import Waitlist from "./Waitlist";
 import SplitText from '../components/SplitText';
 import NavigationBar from "./NavigationBar";
 import { motion, useScroll } from "framer-motion";
-import heroBackground from '../assets/Mythica/heroBackground.jpg';
+import heroBackground from '../assets/Mythica/heroBackground.png';
 import Sample from "../js/Sample";
 import magicText from '../assets/Mythica/magicSVG.svg';
 import Lottie from "lottie-react";
@@ -42,9 +42,9 @@ const Home = () => {
         <section className="w-full relative p-10 mt-14 z-30 md:px-6 md:py-20 md:mt-0">
             <SplitText/>
             <motion.p initial={{opacity:0, y:-20, filter:"blur(40px)"}} animate={{opacity:1, y:0, filter:"blur(0px)"}} transition={{duration:0.4, delay:0.6, ease:"easeInOut"}} className="text-white text-xl max-w-[800px] font-montserrat md:text-2xl md:mt-2">Your monthly portal into magical indie worlds</motion.p>
-            <motion.button initial={{opacity:0, y:-20, filter:"blur(40px)"}} animate={{opacity:1, y:0, filter:"blur(0px)"}} transition={{duration:0.4, delay:0.7, ease:"easeInOut"}} className="bg-customDarkPurple text-lg text-white px-4 py-2 rounded-2xl mt-4 font-dillan font-normal cursor-pointer" onClick={() => goToJoinSection(joinRef)}>Join the Waitlist</motion.button>
+            <motion.button initial={{opacity:0, y:-20, filter:"blur(40px)"}} animate={{opacity:1, y:0, filter:"blur(0px)"}} transition={{duration:0.4, delay:0.7, ease:"easeInOut"}} className="bg-gradient-to-t from-buttonShadeOne via-buttonShadeTwo to-buttonShadeThree text-3xl text-white px-6 py-3 rounded-2xl mt-4 font-dillan font-normal cursor-pointer" onClick={() => goToJoinSection(joinRef)}>Join the Waitlist</motion.button>
             
-        <div className="w-full bg-black/40 backdrop-blur-2xl rounded-2xl relative z-10 mt-10 p-4 md:bg-transparent md:mt-0 md:py-20 md:backdrop-blur-none">
+        <div className="w-full relative z-10 mt-10 p-4 md:bg-transparent md:mt-0 md:py-20">
             <motion.h3 initial={{opacity:0, y:-20, filter:"blur(40px)"}} animate={{opacity:1, y:0, filter:"blur(0px)"}} transition={{duration:0.4, delay:0.8, ease:"easeInOut"}} className="uppercase text-white text-xl font-medium font-montserrat">What is Mythica?</motion.h3>
             <motion.p initial={{opacity:0, y:-20, filter:"blur(40px)"}} animate={{opacity:1, y:0, filter:"blur(0px)"}} transition={{duration:0.4, delay:0.9, ease:"easeInOut"}} className="text-white text-sm max-w-[480px] mt-2 font-montserrat font-normal">We’re passionate about indie fantasy stories. Every month, Mythica delivers one handpicked fantasy book from emerging authors—plus themed items that bring the story to life. Think cozy, magical, and full of surprise.</motion.p>
         </div>
@@ -65,6 +65,7 @@ const Home = () => {
 
         <motion.img initial={{ filter: "url(#rippleGooey)", opacity: 0, scale:2 }} animate={{ filter: "none", opacity: 1, scale:1}} transition={{ duration: 2, ease: "easeInOut" }} src={heroBackground}
             className="absolute object-cover z-20 w-full h-full left-0 top-0"/>
+        <div className="bg-gradient-to-t from-black via-black/0 to-black/0 absolute top-0 h-full w-full z-20"></div>
         </>
         </main>
 
@@ -100,7 +101,7 @@ const Home = () => {
                 ))
                 }
             </div>
-           <p className="text-white font-montserrat italic mt-6 text-center text-sm">Handpicked fantasy reads and magical items—here’s a glimpse of what subscribers have received.</p>
+           <p className="text-customGray font-montserrat italic mt-6 text-center text-sm">Handpicked fantasy reads and magical items—here’s a glimpse of what subscribers have received.</p>
         </section>
         <section ref={joinRef} className="w-full relative z-10 p-5 mt-0 mb-20 md:px-40 max-w-[1400px] md:mt-0">
             <h3 className="uppercase text-white font-montserrat font-medium text-xl"><span className="font-bold">Join</span> the Waitlist</h3>

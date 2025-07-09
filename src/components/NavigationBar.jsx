@@ -17,11 +17,11 @@ const NavigationBar = ({sections}) => {
     }
 
     return ( 
-    <div className="absolute h-fit z-50 top-5 max-w-[1400px] rounded-full bg-slate-900/80 backdrop-blur-2xl px-4 py-2 md:right-10">
-        <ul className="flex gap-6">
+    <div className="absolute h-fit z-50 top-5 max-w-[1400px] rounded-full bg-black backdrop-blur-2xl px-12 py-4 md:right-10">
+        <ul className="flex gap-12">
             {
                 items.map(({label}, index) => (
-                    <li key={index} className={`font-montserrat font-medium cursor-pointer px-6 py-2 transition-all duration-500 ease-in-out hover:animate-pulse ${selectNav === label ? "bg-white text-black rounded-2xl" : "text-white"}`} onClick={() => {goToSection(label); setSelectNav(label);}}>{label}</li>
+                    <li key={index} className={`font-montserrat font-medium cursor-pointer pb-[2px] transition-all duration-500 ease-in-out hover:animate-pulse ${selectNav === label ? "border-b-4 border-navBarSelect rounded-xs text-white" : "text-white"}`} onClick={() => {goToSection(label); setSelectNav(label);}}>{label}</li>
                 ))
 
             }

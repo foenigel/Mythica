@@ -6,7 +6,6 @@ const SplitText = () => {
 
   return (
     <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.6, ease:"easeInOut"}} className="relative group w-fit select-none cursor-pointer">
-      {/* Initial animation */}
       <motion.h1
         initial={{ x: -900, filter: "blur(40px)" }}
         animate={{ x: 0, filter: "blur(0px)" }}
@@ -16,18 +15,16 @@ const SplitText = () => {
         {text}
       </motion.h1>
 
-      {/* Shimmer text layer */}
       <h1
         className="absolute top-0 left-0 w-full text-6xl md:text-[160px] font-dillan uppercase 
-                   text-transparent bg-gradient-to-r from-[#b47aff] via-[#5ed1ff] to-[#b47aff]
+                   text-transparent bg-gradient-to-t from-glowOne to-glowTwo
                    bg-[length:300%_300%] bg-clip-text
                    group-hover:animate-shimmer
-                   drop-shadow-[0_0_20px_#8ef] pointer-events-none"
+                   drop-shadow-[0_0_20px_#e9ea73] pointer-events-none"
       >
         {text}
       </h1>
 
-      {/* Optional fantasy blur clone effect */}
       {[1, -1].map((dir, i) => (
         <h1
           key={i}
@@ -41,7 +38,6 @@ const SplitText = () => {
         </h1>
       ))}
 
-      {/* Shimmer keyframes */}
       <style>{`
         @keyframes shimmer {
           0% { background-position: -200% 0; }
